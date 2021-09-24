@@ -7,4 +7,4 @@ then
 fi
 
 echo "This script may take several minutes on first run."
-mint run SwiftyBridges/SwiftyBridgesVapor@0.1.2 Sources/App --server-output Sources/App/Generated.swift --client-output ../IceCreamCustomer/IceCreamCustomer/Generated.swift
+mint run SwiftyBridges/SwiftyBridgesVapor@0.1.2 Sources/App --server-output Sources/App/Generated/Generated.swift --client-output ../IceCreamCustomer/IceCreamCustomer/Generated/Generated.swift
