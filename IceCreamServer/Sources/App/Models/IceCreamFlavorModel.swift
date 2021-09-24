@@ -1,7 +1,7 @@
 import Fluent
 import Vapor
 
-final class IceCreamFlavor: Model, Content {
+final class IceCreamFlavorModel: Model, Content {
     static let schema = "flavors"
     
     @ID(key: .id)
@@ -17,7 +17,9 @@ final class IceCreamFlavor: Model, Content {
         self.name = name
     }
     
-    func beforeEncode() throws {
-        print("beforeEncode() was called")
+    var asFlavor: IceCreamFlavor? {
+        guard let id = id else { return nil }
+        
+        return IceCreamFlavor(id: id, name: name)
     }
 }

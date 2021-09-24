@@ -19,16 +19,17 @@ struct IceCreamAPI: APIDefinition {
     var request: Request
     
     public func getAllFlavors() -> EventLoopFuture<[IceCreamFlavor]> {
-        IceCreamFlavor.query(on: request.db).all()
+        IceCreamFlavorModel.query(on: request.db).all()
+            .mapEachCompact { $0.asFlavor }
     }
     
     public func add(flavorWithName flavorName: String) -> EventLoopFuture<Void> {
-        let flavor = IceCreamFlavor(name: flavorName)
+        let flavor = IceCreamFlavorModel(name: flavorName)
         return flavor.save(on: request.db)
     }
     
     public func delete(flavorWithID flavorID: UUID) -> EventLoopFuture<Void> {
-        IceCreamFlavor.find(flavorID, on: request.db)
+        IceCreamFlavorModel.find(flavorID, on: request.db)
             .unwrap(or: Abort(.notFound))
             .flatMap { $0.delete(on: request.db) }
     }
@@ -48,16 +49,17 @@ struct AlternativeIceCreamAPI: APIDefinition {
     }
     
     public func getAllFlavors() throws -> EventLoopFuture<[IceCreamFlavor]> {
-        IceCreamFlavor.query(on: request.db).all()
+        IceCreamFlavorModel.query(on: request.db).all()
+            .mapEachCompact { $0.asFlavor }
     }
     
     public func add(flavorWithName flavorName: String) -> EventLoopFuture<Void> {
-        let flavor = IceCreamFlavor(name: flavorName)
+        let flavor = IceCreamFlavorModel(name: flavorName)
         return flavor.save(on: request.db)
     }
     
     public func delete(flavorWithID flavorID: UUID) -> EventLoopFuture<Void> {
-        IceCreamFlavor.find(flavorID, on: request.db)
+        IceCreamFlavorModel.find(flavorID, on: request.db)
             .unwrap(or: Abort(.notFound))
             .flatMap { $0.delete(on: request.db) }
     }

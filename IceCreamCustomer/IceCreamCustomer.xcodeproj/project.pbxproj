@@ -17,10 +17,10 @@
 		460131A826F0A13500AE38D2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460131A726F0A13500AE38D2 /* LoginView.swift */; };
 		460131AC26F0B5EE00AE38D2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460131AB26F0B5EE00AE38D2 /* RegisterView.swift */; };
 		460131B026F0C22100AE38D2 /* IceCreamList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460131AF26F0C22100AE38D2 /* IceCreamList.swift */; };
-		460131B226F0C30400AE38D2 /* IceCreamFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460131B126F0C30400AE38D2 /* IceCreamFlavor.swift */; };
 		46214EE626FC903100736079 /* SwiftyBridgesClient in Frameworks */ = {isa = PBXBuildFile; productRef = 46214EE526FC903100736079 /* SwiftyBridgesClient */; };
 		4634C5EC26F3B8D900AED5FD /* Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634C5EB26F3B8D900AED5FD /* Generated.swift */; };
 		466B126C26FDE649001FFCC4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B126B26FDE649001FFCC4 /* Constants.swift */; };
+		466B127126FDF3D8001FFCC4 /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B127026FDF3D8001FFCC4 /* APIData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +54,9 @@
 		460131A726F0A13500AE38D2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		460131AB26F0B5EE00AE38D2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		460131AF26F0C22100AE38D2 /* IceCreamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamList.swift; sourceTree = "<group>"; };
-		460131B126F0C30400AE38D2 /* IceCreamFlavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavor.swift; sourceTree = "<group>"; };
 		4634C5EB26F3B8D900AED5FD /* Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generated.swift; sourceTree = "<group>"; };
 		466B126B26FDE649001FFCC4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		466B127026FDF3D8001FFCC4 /* APIData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,7 @@
 			children = (
 				4601317B26F09D3A00AE38D2 /* IceCreamCustomerApp.swift */,
 				466B126B26FDE649001FFCC4 /* Constants.swift */,
-				466B126F26FDEA22001FFCC4 /* Data */,
-				466B126D26FDE9CE001FFCC4 /* Generated */,
+				466B126D26FDE9CE001FFCC4 /* API */,
 				466B126E26FDEA0B001FFCC4 /* Views */,
 				4601317F26F09D3F00AE38D2 /* Assets.xcassets */,
 				4601318126F09D3F00AE38D2 /* Preview Content */,
@@ -152,12 +151,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		466B126D26FDE9CE001FFCC4 /* Generated */ = {
+		466B126D26FDE9CE001FFCC4 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				466B127026FDF3D8001FFCC4 /* APIData.swift */,
 				4634C5EB26F3B8D900AED5FD /* Generated.swift */,
 			);
-			path = Generated;
+			path = API;
 			sourceTree = "<group>";
 		};
 		466B126E26FDEA0B001FFCC4 /* Views */ = {
@@ -169,14 +169,6 @@
 				460131AB26F0B5EE00AE38D2 /* RegisterView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		466B126F26FDEA22001FFCC4 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				460131B126F0C30400AE38D2 /* IceCreamFlavor.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,10 +310,10 @@
 				4601317E26F09D3A00AE38D2 /* ContentView.swift in Sources */,
 				460131B026F0C22100AE38D2 /* IceCreamList.swift in Sources */,
 				4634C5EC26F3B8D900AED5FD /* Generated.swift in Sources */,
+				466B127126FDF3D8001FFCC4 /* APIData.swift in Sources */,
 				4601317C26F09D3A00AE38D2 /* IceCreamCustomerApp.swift in Sources */,
 				460131AC26F0B5EE00AE38D2 /* RegisterView.swift in Sources */,
 				460131A826F0A13500AE38D2 /* LoginView.swift in Sources */,
-				460131B226F0C30400AE38D2 /* IceCreamFlavor.swift in Sources */,
 				466B126C26FDE649001FFCC4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
