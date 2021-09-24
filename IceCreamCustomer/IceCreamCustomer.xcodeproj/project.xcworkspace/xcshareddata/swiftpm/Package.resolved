@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftyBridgesClient",
+        "repositoryURL": "https://github.com/SwiftyBridges/SwiftyBridgesClient",
+        "state": {
+          "branch": null,
+          "revision": "0350746aa9ad5982a769a44b676a5c5b5adb1323",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
