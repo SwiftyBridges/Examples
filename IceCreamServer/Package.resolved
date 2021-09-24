@@ -263,12 +263,12 @@
         }
       },
       {
-        "package": "SwiftyBridges",
+        "package": "SwiftyBridgesVapor",
         "repositoryURL": "https://github.com/SwiftyBridges/SwiftyBridgesVapor.git",
         "state": {
           "branch": null,
-          "revision": "a405e75003b131b979e4b2b3477d89bfb2551282",
-          "version": "0.1.2"
+          "revision": "0f36ea27bbb4059a6122bc44f83f985b9a910228",
+          "version": "0.2.0"
         }
       },
       {
